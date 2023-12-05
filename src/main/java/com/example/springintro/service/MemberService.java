@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service // 스프링 빈으로 등록
+//@Service // 스프링 빈으로 등록
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository;
 
-    @Autowired // 스프링 빈으로 등록되어 있는 객체를 찾아서 주입
+//    @Autowired // 스프링 빈으로 등록되어 있는 객체를 찾아서 주입
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
